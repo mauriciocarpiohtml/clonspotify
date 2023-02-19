@@ -16,7 +16,7 @@ function Reproductor() {
 
   
   return (
-    <div className="backdrop-blur-sm bg-black/40 h-[130px] border-2 flex justify-between p-3 ">
+    <div className="backdrop-blur-sm bg-black/40 h-[100px] md:h-[130px] border-2 flex justify-between p-3 ">
       <div className="flex justify-start items-center gap-3 md:gap-5 w-[45%] md:w-[60%]">
         <img src={cancionActiva?.images?.coverart || cancionActiva.images?.coverarthq || cancionActiva?.attributes?.artwork?.url} 
         alt={cancionActiva?.title} 

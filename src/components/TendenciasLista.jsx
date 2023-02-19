@@ -24,7 +24,7 @@ function TendenciasLista() {
       {cargandoTendencias ? ( 
         <Loading/>
       ) : (
-        <div className='p-3 mt-3  flex flex-row flex-wrap gap-3 md:gap-5 justify-center items-center'>
+        <div className='p-3 mt-3  flex flex-row flex-wrap gap-3 md:gap-5 justify-center items-center mb-10'>
             {tendencias?.map((cancion => 
                             <CancionCard 
                             key={cancion.key}
