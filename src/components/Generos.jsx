@@ -4,7 +4,6 @@ import SpotifyContext from '../context/MyContext'
 import { useContext } from 'react'
 
 function Generos() {
-  // 
     const {setGenero} = useContext(SpotifyContext)
   return (
     
@@ -14,15 +13,13 @@ function Generos() {
               <select
               onChange={(e) => setGenero(e.target.value)} 
               className='cursor-pointer p-3 bg-black text-gray-300 text-base rounded-lg outline-none lg:w-[13%] sm:w-[50%] mx-auto'>
-                  {genres.map((genre=>
+                  {genres?.map((genre=>
                       <option
                       key={genre.value}
                       value={genre.value}>{genre.title}</option>))}
               </select>
           </div>
         </div>
-    
-   
   )
 }
 

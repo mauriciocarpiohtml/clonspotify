@@ -2,7 +2,7 @@ import { BsFillAwardFill } from "react-icons/bs";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
 
 
-export const genres = [
+export const genres =[
     { title: 'Hip-Hop', value: 'HIP_HOP_RAP' },
     { title: 'Pop', value: 'POP' },
     { title: 'Dance', value: 'DANCE' },
@@ -17,7 +17,7 @@ export const genres = [
     { title: 'Reggae', value: 'REGGAE_DANCE_HALL' },
     { title: 'House', value: 'HOUSE' },
     { title: 'K-Pop', value: 'K_POP' },
-  ];
+  ]
 
 
 export const enlaces = [
