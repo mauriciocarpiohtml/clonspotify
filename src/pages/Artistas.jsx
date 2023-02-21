@@ -26,7 +26,6 @@ function Artistas() {
     consultarArtista()
   },[artista])
 
-  
   return (
     <>
     <div className='md:flex'>
@@ -46,10 +45,8 @@ function Artistas() {
             </div>
 
               <div className='p-3 mt-3  flex flex-row flex-wrap gap-3 md:gap-5 justify-center items-center '>
-                { artistaInfo?.views?.["top-songs"]?.data?.map((cancion =>
-                                                                <CancionCard
-                                                                cancion={cancion}
-                                                                key={cancion.id}/>))}
+              { artistaInfo?.views?.["top-songs"]?.data && artistaInfo.views["top-songs"].data.map((cancion =>
+                                                                                                   <CancionCard cancion={cancion} key={cancion.id}/>))}
               </div>  
 
               <div className=' fixed bottom-0 w-full z-10 left-0 right-0  '>
