@@ -14,7 +14,6 @@ function MyContext({children}) {
 
   function actualizarArtista(id){
     setArtista(id)
-    console.log(id)
   }
 
   function activarReproductor (cancion){

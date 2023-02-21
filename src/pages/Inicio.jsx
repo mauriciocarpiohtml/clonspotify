@@ -1,4 +1,3 @@
-import React from 'react'
 import Generos from '../components/Generos'
 import ListaCanciones from '../components/ListaCanciones'
 import Reproductor from '../components/Reproductor'
@@ -15,9 +14,9 @@ function Inicio() {
         <Sidebar/>
       
       <div className='md:w-[80%] mt-10'>
-        <Generos/>
+         <Generos/>
          <ListaCanciones/>
-        <div className=' fixed bottom-0 w-full z-10 left-0 right-0  '>
+        <div className='fixed bottom-0 w-full z-10 left-0 right-0  '>
           {reproductor && <Reproductor/>}
         </div> 
       </div>

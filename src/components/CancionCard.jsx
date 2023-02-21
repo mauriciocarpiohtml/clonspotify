@@ -4,13 +4,7 @@ import { Link } from "react-router-dom"
 
 function CancionCard({cancion}) {
     
-    // hub: { actions: [ { uri } ] },
     const {activarReproductor, actualizarArtista} = useContext(SpotifyContext) 
-    
-    
-    // onClick={setArtista(cancion.artists[0].id)} 
-
-    // actualizarArtista(cancion?.artists[0]?.adamid)
     
   return (
     <div className='backdrop-blur-sm bg-white/5 w-[135px] md:w-[200px] h-[240px] md:h-[290px]  flex flex-col  rounded-md p-3 '>

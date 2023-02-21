@@ -1,6 +1,6 @@
 import { BsFillAwardFill } from "react-icons/bs";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
-import { BsFillFileMusicFill } from "react-icons/bs";
+
 
 export const genres = [
     { title: 'Hip-Hop', value: 'HIP_HOP_RAP' },
