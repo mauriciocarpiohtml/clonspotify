@@ -1,28 +1,22 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
-import Inicio from './pages/Inicio'
-import Artistas from './pages/Artistas'
-import Tendencias from './pages/Tendencias'
-import { MyContext } from './context/MyContext'
-import { createBrowserRouter, RouterProvider} from 'react-router-dom'
-
-
-
-const router = createBrowserRouter([
-  {path:'/', element:<Inicio/>},
-  {path:'/artistas/:id', element:<Artistas/>},
-  {path:'/tendencias', element:<Tendencias/>}
-])
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
+import Artistas from './pages/Artistas';
+import Tendencias from './pages/Tendencias';
+import { MyContext } from './context/MyContext';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <MyContext>
-      <RouterProvider router={router}>
-        <App />
-      </RouterProvider>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={App} />
+          <Route path="/artistas/:id" component={Artistas} />
+          <Route path="/tendencias" component={Tendencias} />
+        </Switch>
+      </Router>
     </MyContext>
-    
-  </React.StrictMode>,
+  </React.StrictMode>
 )
