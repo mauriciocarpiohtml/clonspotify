@@ -2,7 +2,7 @@ import { BsFillAwardFill } from "react-icons/bs";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
 
 
-export const genres =[
+export const generosMusica=[
     { title: 'Hip-Hop', value: 'HIP_HOP_RAP' },
     { title: 'Pop', value: 'POP' },
     { title: 'Dance', value: 'DANCE' },
