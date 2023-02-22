@@ -39,7 +39,7 @@ function Sidebar() {
         )}
     </div>
 
-    <div className={`fixed top-0 h-screen w-2/4 backdrop-blur-lg bg-gradient-to-l from-white/5 to-[#241f46] p-3 z-10 md:hidden transition-all duration-500 ease-in ${menuMobile ? 'left-0 opacity-100' : '-left-full opacity-30'}`}>
+    <div className={`fixed top-0 h-screen w-2/4 backdrop-blur-lg bg-gradient-to-l from-white/5 to-[#241f46] p-3 z-10 md:hidden transition-all duration-300 ease-in ${menuMobile ? 'left-0 opacity-100' : '-left-full opacity-30'}`}>
       {enlaces.map((enlace=>
           <NavLink 
             key={enlace.nombre}

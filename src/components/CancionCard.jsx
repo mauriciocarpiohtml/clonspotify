@@ -7,7 +7,7 @@ function CancionCard({cancion}) {
     const {activarReproductor, actualizarArtista} = useContext(SpotifyContext) 
     
   return (
-    <div className='backdrop-blur-sm bg-white/5 w-[135px] md:w-[200px] h-[240px] md:h-[290px]  flex flex-col  rounded-md p-3 '>
+    <div className='backdrop-blur-sm bg-white/5 w-[200px]  h-[290px] flex flex-col  rounded-md p-3 '>
         <div className='rounded-lg relative cursor-pointer' onClick={()=> activarReproductor(cancion)} >
             <img src={cancion.images?.coverart || cancion.images?.coverarthq || cancion?.attributes?.artwork?.url}/>
             <div className='absolute inset-0 bg-black opacity-0 transition-opacity hover:opacity-60 duration-200 ease-in-out'></div>
