@@ -13,11 +13,12 @@ function Generos() {
               <select
                   onChange={(e) => setGenero(e.target.value)} 
                   className='cursor-pointer p-3 bg-black text-gray-300 text-base rounded-lg outline-none lg:w-[13%] sm:w-[50%] mx-auto'>
-                  {generosMusica.map((genero) => (
-                    <option key={genero.value} value={genero.value}>
+                    {generosMusica.map((genero) => (
+                    <option key={genero.value} 
+                      value={genero.value}>
                       {genero.title}
                     </option>
-          ))}
+                  ))}
 
                                         
               </select>
